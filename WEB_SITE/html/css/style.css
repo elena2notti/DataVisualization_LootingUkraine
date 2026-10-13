@@ -1849,3 +1849,44 @@ footer img {max-width: 156px;}
 #rq-urban .row.margin-twenty.no-margin-lr.no-margin-bottom {
     margin-bottom: 20px !important;
 }
+
+/* =====================================================================
+   RESEARCH QUESTIONS – tab bands in the red column (hover = white band)
+   ===================================================================== */
+#questions ul.projects-tabs { margin-top: 200px; }
+#questions ul.projects-tabs li { border-bottom: 1px solid rgba(255,255,255,.35); }
+#questions ul.projects-tabs li a {
+    display: block; padding: 16px 20px !important; margin: 4px 0;
+    border-radius: 6px !important; color: #fff !important; cursor: pointer;
+    transition: background-color .25s ease, color .25s ease;
+}
+#questions ul.projects-tabs li a .rq-num { font-size: 12px; letter-spacing: 1px; opacity: .75; margin-right: 6px; }
+#questions ul.projects-tabs li a:hover,
+#questions ul.projects-tabs li a:focus { background: #fff !important; color: #e31d3b !important; outline: none; }
+#questions ul.projects-tabs li.active a { background: rgba(255,255,255,.14) !important; color: #000 !important; }
+#questions ul.projects-tabs li.active a:hover { background: #fff !important; color: #000 !important; }
+
+/* content of RQ3 / RQ4 */
+#questions .rq-heading { padding-top: 40px; margin-bottom: 10px; }
+#questions .rq-title { text-transform: none; margin-bottom: 12px; line-height: 1.25; }
+#questions .rq-question { font-size: 17px; line-height: 1.5; font-style: italic; color: #333; margin-bottom: 18px; max-width: 900px; }
+#questions .rq-section-title { text-transform: none; margin: 36px 0 6px; font-weight: 600; }
+#questions .rq-list { padding-left: 0; list-style: none; }
+#questions .rq-list li { margin-bottom: 6px; }
+#questions .rq-findings { border-top: 1px solid #ddd; padding: 24px 0 8px; margin: 30px 0 40px; }
+#questions .rq-findings-title { text-transform: none; font-weight: 600; margin-bottom: 10px; }
+#questions .rq-findings ol { padding-left: 20px; }
+#questions .rq-findings li { margin-bottom: 8px; }
+
+/* section numbers: keep the big numbers fully inside their column */
+.architecture-title-number { right: 30px; }
+
+@media (max-width: 991px) {
+    #questions ul.projects-tabs { margin-top: 140px; }
+}
+@media (max-width: 767px) {
+    #questions ul.projects-tabs { margin: 170px 16px 30px 16px; }
+    #questions ul.projects-tabs li { padding: 0 !important; }
+    #questions ul.projects-tabs li a { display: block !important; padding: 14px 12px !important; }
+    .architecture-title-number { right: 16px; }
+}
